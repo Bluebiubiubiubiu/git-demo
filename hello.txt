@@ -1,3 +1,30 @@
 hello gugui!hello git!master test
 hello gugui!hello git!hot fix test
 hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int sum(int k)
+{
+	int s=0,a=0;
+	for(int i=k;i>0;i--)
+	{
+		if(i%13==0||i%17==0)
+		{
+			s=s+i;a++;
+		}
+		if(a==10)
+		break;
+	}
+	return s;
+}
+
+
+int main(int argc, char** argv) 
+{
+	int k;
+	cin>>k;
+	cout<<sum(k);
+	return 0;
+}
